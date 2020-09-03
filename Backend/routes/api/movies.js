@@ -11,7 +11,7 @@ const Joi = require("joi");
 router.get("/", auth, async (req, res) => {
 
 	const {results} = await Movies()
-	console.log(results)
+	// console.log(results)
 	res.json(results);
 });
 
