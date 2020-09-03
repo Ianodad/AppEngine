@@ -1,0 +1,148 @@
+/* @charset "UTF-8";
+* {
+	box-sizing: border-box;
+} */
+
+.movieDetail {
+	background: #1f2229;
+	min-height: 100vh;
+}
+.movieDetailCard {
+	padding-top: 60px;
+}
+
+.moviecard {
+	font-family: "Helvetica", sans-serif, "Ariel";
+	position: relative;
+	background: #ffffff;
+	color: #555555;
+	margin: auto;
+	width: 850px;
+	max-width: 900px;
+	min-height: 300px;
+	padding: 30px 290px 30px 30px;
+	-moz-box-shadow: -5px 5px 15px;
+	-webkit-box-shadow: -5px 5px 15px;
+	box-shadow: -5px 5px 15px;
+	border-radius: 5px;
+}
+.moviecard #movie-content {
+	opacity: 1;
+	width: 100%;
+	display: table;
+	transition: all 500ms ease-out;
+	position: relative;
+}
+.moviecard .movie-title {
+	font-size: 36px;
+	padding-bottom: 6px;
+	color: #333333;
+}
+.moviecard .movie-title .movie-year {
+	margin-left: 12px;
+	font-size: 16px;
+}
+.moviecard .movie-title a {
+	color: #333333;
+	text-decoration: none;
+	overflow-y: hidden;
+	max-width: 250px;
+}
+.moviecard .movie-title a:hover {
+	color: #858585;
+}
+.moviecard .movie-details {
+	font-size: 12px;
+	padding-bottom: 24px;
+	margin-bottom: 12px;
+	border-bottom: 1px solid #dbdbdb;
+}
+.moviecard .movie-details span {
+	padding: 0px 6px;
+	border-right: 1px solid #dbdbdb;
+}
+.moviecard .movie-details span:last-child {
+	border: none;
+}
+.moviecard .movie-castcrew {
+	padding-top: 12px;
+	width: 100%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.moviecard .movie-castcrew span.title {
+	color: #333333;
+	display: inline-block;
+	width: 80px;
+	font-weight: 600;
+}
+.moviecard .movie-synopsis {
+	margin: 24px 0px;
+	padding-top: 24px;
+	border-top: 1px solid #dbdbdb;
+	max-height: 130px;
+	height: 130px;
+	overflow-y: hidden;
+	width: 100%;
+}
+.moviecard .movie-ratings {
+	position: absolute;
+	right: 0px;
+}
+.moviecard .movie-ratings span.star {
+	display: inline-block;
+	margin-right: 12px;
+	color: #f0de00;
+	font-size: 36px;
+}
+.moviecard .movie-ratings span.score {
+	font-size: 30px;
+	color: #333333;
+}
+.moviecard .movie-detail-btn {
+	text-transform: uppercase;
+	outline: none;
+	padding: 15px 50px;
+	position: relative;
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 600;
+}
+.moviecard .movie-detail-btn:hover {
+	text-decoration: underline;
+}
+.moviecard .movie-detail-btn:hover:before {
+	color: #333333;
+}
+.moviecard .movie-detail-btn:hover:after {
+	border-color: #333333;
+}
+.moviecard .movie-detail-btn:before {
+	content: "⌜";
+	font-size: 30px;
+	color: #333333;
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 9px;
+	left: 35px;
+}
+
+.moviecard .movie-poster {
+	position: absolute;
+	background-color: #dbdbdb;
+	background-size: 360px 540px;
+	background-repeat: no-repeat;
+	height: 0;
+	width: 360px;
+	height: 540px;
+	right: -100px;
+	top: 0px;
+	-moz-box-shadow: -2px 2px 7px rgba(243, 243, 243, 0.6);
+	-webkit-box-shadow: -2px 2px 7px rgba(245, 244, 244, 0.6);
+	box-shadow: -2px 2px 7px rgba(255, 255, 255, 0.6);
+	cursor: pointer;
+	z-index: 10;
+}

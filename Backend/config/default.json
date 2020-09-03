@@ -1,0 +1,6 @@
+{
+	"jwtPrivateKey": "unsecureKey",
+	"movieKey": "0ac0a0ff34c0490450e8232fa50b2269",
+	"requiresAuth": false
+
+}
