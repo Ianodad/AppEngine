@@ -24,6 +24,7 @@ class index extends Component {
 				<div className='mx-auto' style={{maxWidth:"800px"}}>
 					<Comments movieId={this.props.match.params.id} user={user} />
 				</div>
+				<div className="text-primary">hello</div>
 			</div>
 		);
 	}

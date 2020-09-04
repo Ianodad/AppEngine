@@ -8,7 +8,7 @@ const key = process.env.MY_KEY || config.get("movieKey")
 const genre = async() => {
   try {
     const {data} = await axios.get(`https://api.themoviedb.org/3/genre/movie/list?api_key=${config.get("movieKey")}&language=en-US`)
-    console.log(data)
+    // console.log(data)
     return data
     console.log()
   } catch (e){

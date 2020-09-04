@@ -12,9 +12,10 @@ export function getMovie(id) {
 	return http.get(`${apiEndPoint}/${id}`);
 }
 
-export function getComments(id) {
+export async function  getComments (id) {
 	console.log("got this far");
-	return http.get(`${apiEndPoint}/${id}/comments`);
+	console.log(await http.get(`${apiEndPoint}/${id}/comments`))
+	return await http.get(`${apiEndPoint}/${id}/comments`);
 }
 
 export function postComment(movieId, comment, username) {

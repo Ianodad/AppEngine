@@ -4,7 +4,7 @@ const Comments = require("../../services/comments");
 const router = express.Router();
 
 router.get("/", (req, res) => {
-	console.log(Comments);
+	// console.log(Comments);
 	res.send(JSON.parse(Comments));
 });
 
@@ -23,7 +23,7 @@ router.get("/:id", (req, res) => {
 });
 
 router.get("/:id", (req, res) => {
-	console.log(Genre);
+	// console.log(Genre);
 	res.send(JSON.parse(Genre));
 });
 
